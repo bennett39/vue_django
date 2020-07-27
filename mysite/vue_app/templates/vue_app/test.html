@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Testing Vue</title>
+  </head>
+
+  <body>
+    <div id="vue-app">
+      <span v-html="myTitle"></span>
+    </div>
+
+    <script type="text/javascript">
+      let app = new Vue({
+        el: "#vue-app",
+        data: {
+          myTitle: '<h1>Hello Vue!</h1>',
+        },
+      });
+    </script>
+  </body>
+</html>
